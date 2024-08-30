@@ -49,7 +49,7 @@ def load_dataset( store_id ):
 
 def predict( data ):
     # API Call
-    url = 'https://test-webapp-rossmann-api.onrender.com/rossmann/predict'
+    url = 'https://telegram-rossmann-test.onrender.com/rossmann/predict'
     header = {'Content-type': 'application/json' }
     data = data
 
