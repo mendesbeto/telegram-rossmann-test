@@ -10,6 +10,7 @@ TOKEN = '7334939088:AAHjt5akazbTPhGcyOJbBHhLQz59RbzMKQk'
 #https://api.telegram.org/bot7334939088:AAH6nR5-UE5ABF8EQsf0T4ThSDTQ6kGIhwI/getMe
 #https://api.telegram.org/bot7334939088:AAH6nR5-UE5ABF8EQsf0T4ThSDTQ6kGIhwI/getUpdates
 #https://api.telegram.org/bot7334939088:AAH6nR5-UE5ABF8EQsf0T4ThSDTQ6kGIhwI/sendMessage?chat_id=6184591677&text=Hi Beto, i am good
+#https://api.telegram.org/bot7334939088:AAHjt5akazbTPhGcyOJbBHhLQz59RbzMKQk/setWebhook?url=https://telegram-rossmann-test.onrender.com
 
 def send_message( chat_id, text ):
     url = 'https://api.telegram.org/bot{}/'.format( TOKEN ) 
@@ -49,7 +50,7 @@ def load_dataset( store_id ):
 
 def predict( data ):
     # API Call
-    url = 'https://telegram-rossmann-test.onrender.com/rossmann/predict'
+    url = 'https://test-webapp-rossmann-api.onrender.com/rossmann/predict'
     header = {'Content-type': 'application/json' }
     data = data
 
